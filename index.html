@@ -3,22 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>You're Not Lacking Discipline. You're Lacking a Nutrition Strategy. — Aligned Nutrition</title>
-<meta name="description" content="A free training with Derek Fowler. 16 years in nutrition. The Buffalo Method — 5 pillars that move the needle.">
+<title>Stop Starting Over Monday — Live Workshop · May 28</title>
+<meta name="description" content="A live 90-minute workshop on the Buffalo Method. For men and women 30+ tired of training hard and changing nothing. Thursday May 28, 7PM ET. $9.">
 
 <!-- Open Graph -->
-<meta property="og:title" content="You're Not Lacking Discipline. You're Lacking a Nutrition Strategy.">
-<meta property="og:description" content="Free training with Derek Fowler. The Buffalo Method — 5 pillars that move the needle.">
+<meta property="og:title" content="Stop Starting Over Monday — Live Workshop, May 28">
+<meta property="og:description" content="A live 90-minute workshop on the Buffalo Method. Thursday May 28, 7PM ET. $9.">
 <meta property="og:type" content="website">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<!-- Calendly Popup Widget -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 <!-- Meta Pixel -->
 <script>
@@ -32,6 +28,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '974365255149424');
 fbq('track', 'PageView');
+fbq('track', 'ViewContent');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
@@ -92,11 +89,12 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
   }
 
   .hero h1 {
-    font-size: clamp(38px, 6.5vw, 56px);
+    font-size: clamp(48px, 9vw, 84px);
     font-weight: 800;
     margin-bottom: 18px;
-    line-height: 1.0;
+    line-height: 0.92;
     color: var(--black);
+    letter-spacing: -0.025em;
   }
 
   .hero .sub {
@@ -104,9 +102,19 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     font-weight: 500;
     font-size: clamp(20px, 3.5vw, 24px);
     line-height: 1.25;
+    color: var(--black);
+    margin-bottom: 14px;
+    max-width: 600px;
+  }
+
+  .hero .proof {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
     color: var(--muted);
     margin-bottom: 36px;
-    max-width: 580px;
+    line-height: 1.5;
+    max-width: 600px;
   }
 
   /* ---------- VIDEO ---------- */
@@ -115,7 +123,7 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     overflow: hidden;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     background: var(--black);
     box-shadow: 0 12px 32px rgba(0,0,0,0.12);
   }
@@ -125,6 +133,83 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     top: 0; left: 0;
     width: 100%; height: 100%;
     border: 0;
+  }
+
+  /* ---------- DUAL CTA BLOCK (under video) ---------- */
+  .dual-cta {
+    background: var(--light-cream);
+    border-left: 4px solid var(--orange);
+    padding: 26px 28px;
+    margin-bottom: 18px;
+  }
+
+  .dual-cta-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 13px;
+    color: var(--orange);
+    margin-bottom: 14px;
+  }
+
+  .dual-cta p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .dual-cta .btn-direct {
+    display: inline-block;
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+    line-height: 1;
+  }
+
+  .dual-cta .btn-direct:hover { background: #000; transform: translateY(-1px); }
+  .dual-cta .btn-direct:active { transform: translateY(0); }
+
+  /* ---------- EVENT DETAIL STRIP ---------- */
+  .event-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 18px 0 0 0;
+    margin-bottom: 4px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 13px;
+    color: var(--black);
+  }
+
+  .event-strip .item { display: flex; align-items: center; gap: 8px; }
+  .event-strip .dot { width: 6px; height: 6px; background: var(--orange); border-radius: 50%; flex-shrink: 0; }
+
+  /* ---------- WATCH PROMPT ---------- */
+  .watch-prompt {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-top: 8px;
   }
 
   /* ---------- BUTTONS ---------- */
@@ -149,10 +234,6 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
 
   .btn:hover { background: var(--orange-hover); transform: translateY(-1px); }
   .btn:active { transform: translateY(0); }
-
-  .cta-block {
-    text-align: center;
-  }
 
   .cta-sub {
     margin-top: 14px;
@@ -190,11 +271,6 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     color: var(--black);
   }
 
-  section p.lead {
-    font-size: 19px;
-    color: var(--black);
-  }
-
   /* ---------- WHO IT'S FOR (dark) ---------- */
   .who {
     background: var(--black);
@@ -202,8 +278,16 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
   }
   .who h2 { color: var(--cream); }
   .who p { color: #D6D1CB; font-size: 18px; }
+  .who .closing-block {
+    border-left: 3px solid var(--orange);
+    padding: 18px 0 18px 22px;
+    margin-top: 28px;
+  }
+  .who .closing-block p:last-child {
+    margin-bottom: 0;
+  }
 
-  /* ---------- LEARN LIST ---------- */
+  /* ---------- LEARN LIST (3 Secrets) ---------- */
   .learn-list {
     list-style: none;
     padding: 0;
@@ -277,9 +361,18 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     color: #D6D1CB;
     font-size: 17px;
     margin-bottom: 32px;
+    text-align: left;
   }
   .final .btn { max-width: 480px; margin: 0 auto; }
   .final .cta-sub { color: #888; }
+
+  .final .event-strip {
+    justify-content: center;
+    color: var(--cream);
+    margin: 0 auto 28px;
+    max-width: 480px;
+    padding-top: 0;
+  }
 
   /* ---------- FOOTER ---------- */
   footer {
@@ -319,6 +412,10 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     section { padding: 48px 0; }
     .btn { font-size: 19px; padding: 18px 24px; }
     .learn-list li { padding: 18px 0; gap: 16px; }
+    .dual-cta { padding: 22px 22px; }
+    .dual-cta .btn-direct { font-size: 16px; padding: 13px 22px; width: 100%; text-align: center; }
+    .event-strip { gap: 14px; font-size: 12px; }
+    .final p { text-align: left; }
   }
 </style>
 </head>
@@ -327,30 +424,41 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow">A Free Training</div>
-    <h1>You're Not Lacking Discipline. You're Lacking a Nutrition Strategy.</h1>
-    <p class="sub">Hunger is information. Strategy is the answer. A free training with Derek Fowler.</p>
+    <div class="eyebrow">Live Workshop · Thursday May 28 · 7PM ET</div>
+    <h1>Stop starting over Monday.</h1>
+    <p class="sub">A live 90-minute workshop on the Buffalo Method. For men and women 30+ who train hard, eat "clean," and still aren't changing.</p>
+    <p class="proof">16 years in nutrition science. 10+ years coaching. Refined with my wife, my kids, and hundreds of clients.</p>
 
     <!-- Video -->
+    <!-- ============================================== -->
+    <!-- REPLACE the embed src with your new VSL.       -->
+    <!-- The current ID is a placeholder from v4.       -->
+    <!-- ============================================== -->
     <div class="video-wrap">
       <iframe
-        src="https://www.loom.com/embed/a8a8aeea27ff453390e8ee52db1ab522?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen
-        title="You're Not Lacking Discipline. You're Lacking a Nutrition Strategy.">
+        src="https://www.youtube.com/embed/VE5Jf4GNICw?rel=0&modestbranding=1&playsinline=1"
+        title="Stop Starting Over Monday — Live Workshop"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
       </iframe>
     </div>
 
-    <!-- CTA -->
-    <div class="cta-block">
-      <a href=""
-         onclick="fbq('track','Lead'); Calendly.initPopupWidget({url: 'https://calendly.com/derek-freethemacro/30min'}); return false;"
-         class="btn">
-        Book a Call With Derek &nbsp;→
+    <!-- Dual Path CTA -->
+    <div class="dual-cta">
+      <div class="dual-cta-label">Already know you're in?</div>
+      <p>Skip the video. Save your seat for Thursday's live workshop.</p>
+      <!-- ============================================== -->
+      <!-- REPLACE href with your Stripe Payment Link.    -->
+      <!-- ============================================== -->
+      <a href="https://buy.stripe.com/REPLACE_WITH_YOUR_STRIPE_LINK"
+         onclick="fbq('track','InitiateCheckout', {value: 9.00, currency: 'USD'});"
+         class="btn-direct">
+        Save My Seat — $9 &nbsp;→
       </a>
-      <div class="cta-sub">30 minute call to see if 1:1 coaching is the right move.</div>
     </div>
+
+    <p class="watch-prompt">Or press play. Then save your seat.</p>
   </div>
 </section>
 
@@ -359,55 +467,48 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
   <div class="wrap">
     <div class="section-label">Built For</div>
     <h2>If this sounds like your life.</h2>
-    <p>You lift. You've been doing the work for years.</p>
+    <p>You've been doing the work for years.</p>
     <p>Disciplined most of the week. The weekend hits, willpower drops, Monday you start over.</p>
-    <p>You're a parent. Time is short.</p>
-    <p>Maybe you're on HRT or a GLP-1. Maybe neither. The body's changed and the old playbook needs to change with it.</p>
-    <p>Most programs were built for someone with a different body and a different life.</p>
-    <p>This training is for you.</p>
+    <p>You're a parent. You run a business. Your work is demanding.</p>
+    <p>Time is short. Figuring it out on your own takes too long.</p>
+    <p>Maybe you're on HRT or a GLP-1. Maybe neither. The body's changed and the old playbook has to change with it.</p>
+    <p>You've done the diets, the macros, the rules, and something still isn't clicking.</p>
+
+    <div class="closing-block">
+      <p>Most programs are built so you eat your food in the corner while your family eats the foods you're barring yourself from.</p>
+      <p>The fix is a system with inclusion.</p>
+      <p>Your family's nutrition matters to you. It matters to me.</p>
+    </div>
   </div>
 </section>
 
-<!-- WHAT YOU'LL LEARN -->
+<!-- WHAT YOU'LL LEARN LIVE (3 Secrets teaser) -->
 <section>
   <div class="wrap">
-    <div class="section-label">What's In The Training</div>
-    <h2>The Buffalo Method. 5 pillars.</h2>
+    <div class="section-label">What You'll Learn Live</div>
+    <h2>Three things, in 90 minutes.</h2>
+    <p>The workshop is built on the framework I use with every client. We'll go through it together, live, and you'll leave knowing exactly what to fix on Monday.</p>
 
     <ul class="learn-list">
       <li>
         <span class="num">01</span>
         <span class="text">
-          <span class="pillar-name">Awareness</span>
-          See every food on your plate as protein, fat, or carb. The skill almost nobody is practicing — and the reason guessing keeps backfiring.
+          <span class="pillar-name">What you actually need to do</span>
+          The single skill almost nobody is practicing. Forget the meal plans and the willpower. This is the foundation that makes everything else work.
         </span>
       </li>
       <li>
         <span class="num">02</span>
         <span class="text">
-          <span class="pillar-name">Hunger Is Healthy</span>
-          Why hunger is information your body is sending you. How to tell homeostatic hunger from a craving — and what to do with each.
+          <span class="pillar-name">Why what you're doing isn't working</span>
+          The reason "eat clean, train hard" has been failing you, even when you're doing both. It isn't about effort. It's about a gap nobody told you existed.
         </span>
       </li>
       <li>
         <span class="num">03</span>
         <span class="text">
-          <span class="pillar-name">The Power of Protein</span>
-          One gram per pound of ideal bodyweight, minimum. Why protein drives more than muscle — hair, skin, hormones, immune system.
-        </span>
-      </li>
-      <li>
-        <span class="num">04</span>
-        <span class="text">
-          <span class="pillar-name">Build Meals</span>
-          How to match what you eat to what your body needs and when. The exact framework I use on myself, every day.
-        </span>
-      </li>
-      <li>
-        <span class="num">05</span>
-        <span class="text">
-          <span class="pillar-name">Confidence Kills Confusion</span>
-          How to travel, eat out, and handle disruption without starting over Monday. The whole system goes with you.
+          <span class="pillar-name">How to fix it with structure</span>
+          The 5-pillar Buffalo Method, walked through step by step. The exact framework I use with clients and on myself every day.
         </span>
       </li>
     </ul>
@@ -417,11 +518,11 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
 <!-- ABOUT DEREK -->
 <section class="about">
   <div class="wrap">
-    <div class="section-label">Who's Teaching</div>
+    <div class="section-label">About Derek</div>
     <h2>Derek Fowler.</h2>
     <p>16 years in nutrition science. 10+ years coaching.</p>
-    <p>I read studies for hours every day because I want to. The Buffalo Method is the framework I built for myself, then refined across hundreds of clients.</p>
-    <p>I'm a parent. We travel — we're nomadic. Family is the reason I take a limited number of clients each month. My wife eats by this framework. Our kids do too. It travels with us.</p>
+    <p>The Buffalo Method is the framework I built for myself, then refined using my wife, my kids, and my clients.</p>
+    <p>I'm a parent. We travel. We're nomadic. My wife eats by this framework. Our kids do too. The principles in this system work wherever in the world you are.</p>
     <p class="signature">— Derek</p>
   </div>
 </section>
@@ -429,15 +530,24 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
 <!-- FINAL CTA -->
 <section class="final">
   <div class="wrap">
-    <h2>Watch the training. Then book a call.</h2>
-    <p>If what you saw lands, the next step is a 30-minute conversation. We talk through where you are, where you want to be, and whether 1:1 coaching is the right move.</p>
+    <h2>Save your seat.</h2>
+    <p>Thursday May 28 at 7PM Eastern. A live 90-minute workshop on the Buffalo Method. $9 gets you the live, the Q&A, and a recording if you can't make it. Limited seats, no replay published publicly.</p>
 
-    <a href=""
-       onclick="fbq('track','Lead'); Calendly.initPopupWidget({url: 'https://calendly.com/derek-freethemacro/30min'}); return false;"
+    <div class="event-strip">
+      <div class="item"><span class="dot"></span>Thu May 28</div>
+      <div class="item"><span class="dot"></span>7:00 PM ET</div>
+      <div class="item"><span class="dot"></span>90 minutes</div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- REPLACE href with your Stripe Payment Link.    -->
+    <!-- ============================================== -->
+    <a href="https://buy.stripe.com/REPLACE_WITH_YOUR_STRIPE_LINK"
+       onclick="fbq('track','InitiateCheckout', {value: 9.00, currency: 'USD'});"
        class="btn">
-        Book a Call With Derek &nbsp;→
+        Save My Seat — $9 &nbsp;→
     </a>
-    <div class="cta-sub">30 minute call to see if 1:1 coaching is the right move.</div>
+    <div class="cta-sub">Stripe checkout. Zoom link sent immediately after payment.</div>
   </div>
 </section>
 
