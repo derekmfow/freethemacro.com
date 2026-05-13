@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're In — Buffalo Method Live Workshop</title>
+<meta name="description" content="Your seat is confirmed for the Buffalo Method live workshop, Thursday May 28 at 7PM ET.">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '974365255149424');
+fbq('track', 'PageView');
+fbq('track', 'Purchase', {value: 9.00, currency: 'USD'});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
+/></noscript>
+
+<style>
+  :root {
+    --black: #1A1A1A;
+    --orange: #E8611A;
+    --orange-hover: #CF5416;
+    --cream: #F7F5F2;
+    --light-cream: #EEE9E2;
+    --muted: #6B6B6B;
+    --line: #E5E0DA;
+    --green: #2D7A4F;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    background: var(--cream);
+    line-height: 1.55;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: var(--cream);
+    padding: 80px 0 56px;
+    text-align: center;
+  }
+
+  .checkmark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: var(--orange);
+    border-radius: 50%;
+    margin-bottom: 24px;
+  }
+
+  .checkmark svg {
+    width: 32px;
+    height: 32px;
+    stroke: #fff;
+    stroke-width: 3.5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .eyebrow {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 13px;
+    color: var(--orange);
+    margin-bottom: 14px;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 9vw, 84px);
+    font-weight: 800;
+    margin-bottom: 18px;
+    line-height: 0.92;
+    color: var(--black);
+    letter-spacing: -0.025em;
+  }
+
+  .hero .sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: clamp(20px, 3.5vw, 24px);
+    line-height: 1.3;
+    color: var(--black);
+    margin-bottom: 32px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---------- EVENT CARD ---------- */
+  .event-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--orange);
+    padding: 28px 30px;
+    margin: 0 auto 40px;
+    max-width: 560px;
+    text-align: left;
+  }
+
+  .event-card .label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 12px;
+    color: var(--orange);
+    margin-bottom: 10px;
+  }
+
+  .event-card h2 {
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: var(--black);
+  }
+
+  .event-card .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .event-card .meta-row .item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .event-card .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ---------- NEXT STEPS ---------- */
+  .next-steps {
+    padding: 64px 0;
+  }
+
+  .next-steps h2 {
+    font-size: clamp(32px, 5vw, 42px);
+    margin-bottom: 14px;
+  }
+
+  .next-steps .intro {
+    font-size: 17px;
+    color: var(--muted);
+    margin-bottom: 36px;
+  }
+
+  .step {
+    display: flex;
+    gap: 22px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: flex-start;
+  }
+
+  .step:last-child { border-bottom: none; }
+
+  .step .num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: var(--orange);
+    font-size: 24px;
+    line-height: 1.15;
+    flex-shrink: 0;
+    min-width: 36px;
+  }
+
+  .step .content {
+    flex: 1;
+  }
+
+  .step .step-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--black);
+    display: block;
+    margin-bottom: 6px;
+    font-size: 19px;
+  }
+
+  .step .step-body {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  /* ---------- CALENDAR BUTTONS ---------- */
+  .cal-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .cal-btn {
+    display: inline-block;
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+    line-height: 1;
+  }
+
+  .cal-btn:hover { background: #000; transform: translateY(-1px); }
+  .cal-btn:active { transform: translateY(0); }
+
+  /* ---------- WHAT TO EXPECT ---------- */
+  .expect {
+    background: var(--black);
+    color: var(--cream);
+    padding: 64px 0;
+  }
+  .expect h2 { color: var(--cream); margin-bottom: 14px; font-size: clamp(28px, 5vw, 36px); }
+  .expect .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    color: var(--orange);
+    margin-bottom: 14px;
+  }
+  .expect p {
+    color: #D6D1CB;
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+  .expect p:last-child { margin-bottom: 0; }
+  .expect .closing-block {
+    border-left: 3px solid var(--orange);
+    padding: 14px 0 14px 22px;
+    margin-top: 24px;
+  }
+  .expect .signature {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 24px;
+    color: var(--orange);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--black);
+    color: #888;
+    padding: 28px 0 36px;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    border-top: 1px solid #2A2A2A;
+  }
+
+  footer .brand {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: var(--cream);
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  footer .tagline {
+    font-style: italic;
+    color: var(--orange);
+    margin-top: 6px;
+    font-family: 'Barlow', sans-serif;
+  }
+
+  footer .meta {
+    margin-top: 14px;
+    color: #666;
+  }
+
+  /* ---------- MOBILE TWEAKS ---------- */
+  @media (max-width: 600px) {
+    .hero { padding: 56px 0 40px; }
+    .next-steps { padding: 48px 0; }
+    .expect { padding: 48px 0; }
+    .event-card { padding: 22px 22px; }
+    .step { padding: 20px 0; gap: 16px; }
+    .cal-buttons { gap: 8px; }
+    .cal-btn { font-size: 13px; padding: 9px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="checkmark">
+      <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>
+    </div>
+    <div class="eyebrow">Payment Confirmed</div>
+    <h1>You're in.</h1>
+    <p class="sub">Your seat is held for Thursday's live workshop. Two things to do right now to make sure you don't miss it.</p>
+
+    <div class="event-card">
+      <div class="label">The Workshop</div>
+      <h2>Stop Starting Over Monday — The Buffalo Method Live</h2>
+      <div class="meta-row">
+        <div class="item"><span class="dot"></span>Thursday May 28</div>
+        <div class="item"><span class="dot"></span>7:00 PM Eastern</div>
+        <div class="item"><span class="dot"></span>90 minutes + Q&A</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT STEPS -->
+<section class="next-steps">
+  <div class="wrap">
+    <h2>Two things, then you're set.</h2>
+    <p class="intro">Both take less than 60 seconds.</p>
+
+    <div class="step">
+      <span class="num">01</span>
+      <div class="content">
+        <span class="step-name">Add it to your calendar</span>
+        <p class="step-body">Pick your calendar app. The event will save with the Zoom link placeholder, which we'll fill in via email.</p>
+        <div class="cal-buttons">
+          <!-- Google Calendar -->
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Buffalo%20Method%20Live%20Workshop&dates=20260528T230000Z/20260529T003000Z&details=Live%2090-minute%20workshop%20with%20Derek%20Fowler.%20Zoom%20link%20will%20be%20emailed%20separately.%20Eat%20Without%20Fear.%20Train%20With%20Purpose." target="_blank" rel="noopener" class="cal-btn">Google Calendar</a>
+          <!-- Outlook -->
+          <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Buffalo%20Method%20Live%20Workshop&startdt=2026-05-28T19:00:00-04:00&enddt=2026-05-28T20:30:00-04:00&body=Live%2090-minute%20workshop%20with%20Derek%20Fowler.%20Zoom%20link%20will%20be%20emailed%20separately." target="_blank" rel="noopener" class="cal-btn">Outlook</a>
+          <!-- Apple/ICS -->
+          <a href="data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0APRODID%3A-//Aligned%20Nutrition//EN%0ABEGIN%3AVEVENT%0AUID%3Abuffalo-method-may28-2026%40freethemacro.com%0ADTSTAMP%3A20260513T180000Z%0ADTSTART%3A20260528T230000Z%0ADTEND%3A20260529T003000Z%0ASUMMARY%3ABuffalo%20Method%20Live%20Workshop%0ADESCRIPTION%3ALive%2090-minute%20workshop%20with%20Derek%20Fowler.%20Zoom%20link%20will%20be%20emailed%20separately.%0AEND%3AVEVENT%0AEND%3AVCALENDAR" download="buffalo-method-may28.ics" class="cal-btn">Apple / iCal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="num">02</span>
+      <div class="content">
+        <span class="step-name">Watch your inbox</span>
+        <p class="step-body">Your private Zoom registration link is on its way to the email you used at checkout. It'll arrive within the next 4 hours. Check spam if you don't see it. The day-of, you'll get reminders 24 hours, 1 hour, and 10 minutes before we go live.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="num">03</span>
+      <div class="content">
+        <span class="step-name">Show up ready</span>
+        <p class="step-body">Block the 90 minutes. Put your phone face down. Bring a notebook. We're covering the exact framework I use with my 1:1 clients, and you'll leave with something to fix on Monday morning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section class="expect">
+  <div class="wrap">
+    <div class="section-label">A note from Derek</div>
+    <h2>Why I built this workshop.</h2>
+    <p>I've spent 16 years watching the same pattern. Disciplined, hardworking people stack workout on workout, meal plan on meal plan, app on app. They get tired. They start over Monday. They blame themselves.</p>
+    <p>It isn't a willpower problem. It's a framework problem.</p>
+    <p>On Thursday I'm walking you through the system I use with every client, on myself, and inside my own family. No fluff, no upsell theater. Just the work.</p>
+
+    <div class="closing-block">
+      <p>If after the 90 minutes you decide you want me to install this in your life 1:1, we'll talk at the end. If not, you walk away with a framework you can run yourself. Either way, your $9 made it worth the seat.</p>
+    </div>
+
+    <p class="signature">— Derek</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="brand">Aligned Nutrition</div>
+    <div class="tagline">Eat Without Fear. Train With Purpose.</div>
+    <div class="meta">freethemacro.com · @freethemacro · derek@freethemacro.com</div>
+  </div>
+</footer>
+
+</body>
+</html>
