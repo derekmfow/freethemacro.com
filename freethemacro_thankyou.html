@@ -238,6 +238,29 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     margin-bottom: 14px;
   }
 
+  /* ---------- ZOOM REGISTER BUTTON ---------- */
+  .zoom-btn {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 32px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+    line-height: 1;
+    margin-top: 4px;
+    box-shadow: 0 6px 18px rgba(232, 97, 26, 0.28);
+  }
+
+  .zoom-btn:hover { background: var(--orange-hover); transform: translateY(-1px); }
+  .zoom-btn:active { transform: translateY(0); }
+
   /* ---------- CALENDAR BUTTONS ---------- */
   .cal-buttons {
     display: flex;
@@ -342,6 +365,7 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     .step { padding: 20px 0; gap: 16px; }
     .cal-buttons { gap: 8px; }
     .cal-btn { font-size: 13px; padding: 9px 14px; }
+    .zoom-btn { font-size: 18px; padding: 16px 22px; width: 100%; text-align: center; }
   }
 </style>
 </head>
@@ -355,7 +379,7 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
     </div>
     <div class="eyebrow">Payment Confirmed</div>
     <h1>You're in.</h1>
-    <p class="sub">Your seat is held for Thursday's live workshop. Two things to do right now to make sure you don't miss it.</p>
+    <p class="sub">Your seat is held for Thursday's live workshop. Three quick things to do right now to make sure you don't miss it.</p>
 
     <div class="event-card">
       <div class="label">The Workshop</div>
@@ -372,30 +396,31 @@ src="https://www.facebook.com/tr?id=974365255149424&ev=PageView&noscript=1"
 <!-- NEXT STEPS -->
 <section class="next-steps">
   <div class="wrap">
-    <h2>Two things, then you're set.</h2>
-    <p class="intro">Both take less than 60 seconds.</p>
+    <h2>Three things, then you're set.</h2>
+    <p class="intro">Step 1 is the only one that actually matters. The other two help.</p>
 
     <div class="step">
       <span class="num">01</span>
       <div class="content">
-        <span class="step-name">Add it to your calendar</span>
-        <p class="step-body">Pick your calendar app. The event will save with the Zoom link placeholder, which we'll fill in via email.</p>
-        <div class="cal-buttons">
-          <!-- Google Calendar -->
-          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Buffalo%20Method%20Live%20Workshop&dates=20260528T230000Z/20260529T003000Z&details=Live%2090-minute%20workshop%20with%20Derek%20Fowler.%20Zoom%20link%20will%20be%20emailed%20separately.%20Eat%20Without%20Fear.%20Train%20With%20Purpose." target="_blank" rel="noopener" class="cal-btn">Google Calendar</a>
-          <!-- Outlook -->
-          <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Buffalo%20Method%20Live%20Workshop&startdt=2026-05-28T19:00:00-04:00&enddt=2026-05-28T20:30:00-04:00&body=Live%2090-minute%20workshop%20with%20Derek%20Fowler.%20Zoom%20link%20will%20be%20emailed%20separately." target="_blank" rel="noopener" class="cal-btn">Outlook</a>
-          <!-- Apple/ICS -->
-          <a href="data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0APRODID%3A-//Aligned%20Nutrition//EN%0ABEGIN%3AVEVENT%0AUID%3Abuffalo-method-may28-2026%40freethemacro.com%0ADTSTAMP%3A20260513T180000Z%0ADTSTART%3A20260528T230000Z%0ADTEND%3A20260529T003000Z%0ASUMMARY%3ABuffalo%20Method%20Live%20Workshop%0ADESCRIPTION%3ALive%2090-minute%20workshop%20with%20Derek%20Fowler.%20Zoom%20link%20will%20be%20emailed%20separately.%0AEND%3AVEVENT%0AEND%3AVCALENDAR" download="buffalo-method-may28.ics" class="cal-btn">Apple / iCal</a>
-        </div>
+        <span class="step-name">Register for your Zoom seat</span>
+        <p class="step-body">This is the one thing you need to do right now. Click below to lock in your registration. Zoom will email you the private join link immediately, plus reminders 24 hours before, 1 hour before, and at start time.</p>
+        <a href="https://us06web.zoom.us/meeting/register/wCo4qim5R0aHGu-3Sv-Gow" target="_blank" rel="noopener" class="zoom-btn">Register on Zoom &nbsp;→</a>
       </div>
     </div>
 
     <div class="step">
       <span class="num">02</span>
       <div class="content">
-        <span class="step-name">Watch your inbox</span>
-        <p class="step-body">Your private Zoom registration link is on its way to the email you used at checkout. It'll arrive within the next 4 hours. Check spam if you don't see it. The day-of, you'll get reminders 24 hours, 1 hour, and 10 minutes before we go live.</p>
+        <span class="step-name">Add it to your calendar</span>
+        <p class="step-body">Save the date so it doesn't get buried. Pick your calendar app below.</p>
+        <div class="cal-buttons">
+          <!-- Google Calendar -->
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Buffalo%20Method%20Live%20Workshop&dates=20260528T230000Z/20260529T003000Z&details=Live%2090-minute%20workshop%20with%20Derek%20Fowler.%20Eat%20Without%20Fear.%20Train%20With%20Purpose." target="_blank" rel="noopener" class="cal-btn">Google Calendar</a>
+          <!-- Outlook -->
+          <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Buffalo%20Method%20Live%20Workshop&startdt=2026-05-28T19:00:00-04:00&enddt=2026-05-28T20:30:00-04:00&body=Live%2090-minute%20workshop%20with%20Derek%20Fowler." target="_blank" rel="noopener" class="cal-btn">Outlook</a>
+          <!-- Apple/ICS -->
+          <a href="data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0APRODID%3A-//Aligned%20Nutrition//EN%0ABEGIN%3AVEVENT%0AUID%3Abuffalo-method-may28-2026%40freethemacro.com%0ADTSTAMP%3A20260513T180000Z%0ADTSTART%3A20260528T230000Z%0ADTEND%3A20260529T003000Z%0ASUMMARY%3ABuffalo%20Method%20Live%20Workshop%0ADESCRIPTION%3ALive%2090-minute%20workshop%20with%20Derek%20Fowler.%0AEND%3AVEVENT%0AEND%3AVCALENDAR" download="buffalo-method-may28.ics" class="cal-btn">Apple / iCal</a>
+        </div>
       </div>
     </div>
 
